@@ -1,0 +1,221 @@
+<!doctype html>
+{%load staticfiles%}
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+    <!-- STATIC CSS -->
+
+    <link rel="stylesheet" href="{% static 'myStyle.css'%}?version16">
+   <!-- <link href="{% static 'css/stylish-portfolio.min.css' %}?version10" rel="stylesheet"> -->
+    <link href="{% static 'css/stylish-portfolio.css' %}?version16" rel="stylesheet">
+    <title>Haupt Seite</title>
+</head>
+
+<body data-spy="scroll" data-target="#menu">
+
+    <!-- Home -->
+    <div id="home">
+
+
+
+
+        <!-- Navigation Bar-->
+
+        <nav class="navbar navbar-expand-lg fixed-top ">
+
+
+
+            <a class="navbar-brand" href="#"> <img src="#" alt="Hotel Logo"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ml-auto">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home"> STARTSEITE </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ourStory"> UNSERE GESCHICHTE </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rooms"> ZIMMER </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form"> RESERVIERUNG </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"> KONTAKT </a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                            DEUTSCH</a>
+                        <div class="dropdown-menu">
+
+
+                            <a class="sprache" href="{% url 'deutsch'%}"> DEUTSCH</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="sprache" href="{%url 'english'%}"> ENGLISCH</a>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+        </nav>
+
+        <!-- End Navigation BAr-->
+
+
+
+
+        
+            <div id="home">
+            
+                <header class="masthead d-flex">
+                    <div class="container text-center my-auto">
+                        <h2>HOTEL SE NALAZI U BLIZINI JEDNOG OD NAJLEPSIH ZAMKOVA</h2>
+            
+                        </h3>
+                        <br />
+                        <br />
+                        <br />
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#">SAZNAJ VISE</a>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#">SAZNAJ VISE</a>
+                    </div>
+                    <div class="overlay"></div>
+                </header>
+            
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div> <!-- End home-->
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- OUR STORY Section-->
+
+
+
+    <div id="ourStory">
+
+
+<section class="content-section " id="about">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2>UNSERE GESCHICHTE</h2>
+                <p class="lead mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem inventore corrupti nulla, ratione culpa eius alias sint blanditiis! Minus!
+                    
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </div>
+
+    <!--END OF OUR STORY-->
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    <!-- ABOUT THE CASTLE-->
+
+    <div id="aboutCastle">
+
+        <header class="masthead d-flex">
+            <div class="container text-center my-auto">
+                <h2>HOTEL SE NALAZI U BLIZINI JEDNOG OD NAJLEPSIH ZAMKOVA</h2>
+                    
+                </h3>
+                <br/>
+                <br/>
+                <br/>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#">SAZNAJ VISE</a>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#">SAZNAJ VISE</a>
+            </div>
+            <div class="overlay"></div>
+        </header>
+
+    </div>
+
+
+    <!--END OF CASTLE-->
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="{%static 'program.js'%}?version15"> </script>
+        <script src="{% static 'js/stylish-portfolio.js' %}?version16"></script>
+    <!--   <script src="{% static 'js/stylish-portfolio.min.js' %}?version9"></script> -->
+</body>
+
+</html>

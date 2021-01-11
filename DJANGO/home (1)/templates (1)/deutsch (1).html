@@ -1,0 +1,755 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Unna&display=swap" rel="stylesheet">
+
+  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burgaltena</title>
+
+    <!--BOOTSRAP CSS-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/agency.css' %}"> -->
+
+</head>
+
+
+
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top" style="text-align:center ;">GÄSTEHAUS <br />
+                ALTENA</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menü
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#ourStory">Unsere Geschichte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#rooms">Zimmer </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#form">Reservierung</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Kontakt </a>
+                    </li>
+
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- LANDING -->
+    <header class="masthead">
+        <div class="container">
+
+            <div class="language"> <a id="de" href="{% url 'deutsch'%}" style="color: #ffedd8;
+font-family: 'Unna', serif; font-size: 140%; text-decoration: none;">DE</a>
+
+
+                <span style="font-family: 'Unna',serif; font-size:140% ;"> /</span>
+                <a href="{% url 'english'%} " style="color: #f3c98b;
+font-family: 'Unna', serif; font-size: 140%; text-decoration: none; ">EN</a>
+
+            </div>
+
+            <div class="intro-text">
+
+                <div class="intro-heading text-uppercase">GÄSTEHAUS Altena</div>
+                <div class="intro-lead-in">Modernes Hotel an einem Ort der Geschichte</div>
+
+                <br />
+                <br />
+
+
+                <a class="btn btn-primary btn-md text-uppercase js-scroll-trigger" href="#form"
+                    style="color: #f3c98b;" id="btn1">Reservierung</a>
+
+                <a class="btn btn-primary btn-md text-uppercase js-scroll-trigger" href="#ourStory" style="color: #f3c98b;"
+                    id="btn2">Erfahren Sie mehr</a>
+
+
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <!--Our Story-->
+    <div class="page-section" id="ourStory">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mx-auto">
+                    <h2 class="section-heading " id="title">Unsere Geschichte</h2>
+                    <h3 class="section-subheading" id="text">Das Gästehaus Altena liegt im südwestfälischen Märkischen Kreis am rechten Ufer der Lenne und ist ein Ort, an dem Sie
+                    die Zeit vergessen.  Gegründet im Jahr 2019, aus den Ruinen eines alten Pflegeheims, wurde es komplett umgebaut und
+                    repräsentiert nun perfekt die Mischung aus traditionellem und modernem Geist - ein bekanntes Bild hier in
+                    Norddeutschland.</h3>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--
+
+<header class="masthead" id="castle" >
+    <div class="container">
+        <div class="intro-text">
+
+            <div class="intro-heading text-uppercase" id="oldBeuty">Gasthaus Altena</div>
+            <span id=line></span>
+            <div class="intro-lead-in">Modern hotel in place made of history</div>
+
+          
+
+
+            
+        </div>
+    </div>
+</header>
+
+-->
+
+    <section class="callout" id="oldBeuty">
+        <div class="container text-center">
+            <h2 class="title mx-auto " style="color: #f3c98b;">Die alte Schönheit </h2>
+
+            <img src="/static/imgs/castle/line.png" class="img-fluid mx-center" syle="max-width:100%; height-auto;" alt="">
+
+
+
+            <h3 style="color: #f3c98b;" class="mx-auto ">Nur wenige Minuten von uns entfernt liegt ein atemberaubendes architektonisches Wunderwerk, Burgaltena - die Altena, die
+            mittelalterliche Schönheit schläft auf dem Klusenberg und wacht über die Stadt seit Jahrhunderten.</h3>
+
+            <h2 class="mx-auto mb-5"> <a class="help" href="{% url 'burgaltena'%} "
+                    style="font-family:'Tangerine',serif; color:#f3c98b;text-align: right !important;">Entdecken Sie
+                    Burgaltena!</a></h3>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!--CARDS-->
+
+
+
+    <section class="page-section1" id="rooms">
+
+
+        <div class="container text-center">
+
+            <div class="col-lg-12 text-center mx-auto">
+                <h2 class="section-heading " id="title1">Zimmer</h2>
+            </div>
+
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-4">
+
+                    <div class="card text-right" >
+
+                        <div class="hovereffect">
+
+                            <img src="/static/imgs/cards/business.png" class="card-img-top" alt="">
+
+                            <div class="overlay">
+
+                                <a class="info" href="#form">Reservierung</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card-body">
+
+
+
+
+
+                            <h4 class="card-title"> Bussinesszimmer</h4>
+                            <p class="card-text">Einbettzimmer <br /> Frühstück und gym <br /> 27&euro; </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+                <div class="col-md-4">
+
+                    <div class="card text-right">
+
+                        <div class="hovereffect">
+
+
+                            <img src="/static/imgs/cards/couple.png" class="card-img-top" alt="">
+
+
+                            <div class="overlay">
+
+                                <a class="info" href="#form">Reservierung</a>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title"> Paarzimmer</h4>
+                            <p class="card-text">Zweibettzimmer <br /> Frühstück und gym<br /> 49&euro; </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card text-right">
+
+                        <div class="hovereffect">
+
+                            <img src="/static/imgs/cards/family.png" class="card-img-top" alt="">
+
+
+                            <div class="overlay">
+
+                                <a class="info" href="#form">Reservierung</a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card-body">
+                            <h4 class="card-title">Familienzimmer</h4>
+                            <p class="card-text">Dreibettzimmer <br /> Frühstück und gym <br /> 63&euro;</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-lg-12 text-center mx-auto">
+            <h2 class="section-heading " id="title2">Alles, was Sie brauchen, an einem Ort</h2>
+        </div>
+
+        <!--
+
+        </div>
+    </div>
+-->
+
+    </section>
+
+
+
+
+    <!-- Image Showcases -->
+
+
+    
+    <section class="showcase">
+
+
+
+
+
+        <div class="container-fluid p-0">
+
+
+            <div class="row no-gutters row1">
+
+                <div class="col-lg-6 order-lg-1 text-white showcase-img"
+                    style="background-image: url('/static/imgs/showcase/1.png');"></div>
+
+                    <div class="col-lg-6 order-lg-2 ">
+                <div class="row no-gutters subrow1">
+                   
+                    <div class="col-lg-6 ">
+                    <h2 style="font-family: Tangerine, serif; color: #f3c98b; font-size: 5rem; text-align: center; ">Beginnen Sie Ihren Tag!</h2>
+
+</div>
+               
+<div class="col-lg-6">
+                    <div class="container">
+                    <p class="lead mb-0" style="text-align: center;font-family: 'Unna',serif;  font-size:1.3rem; padding-top:1.5rem;">Genießen Sie die traditionelle deutsche Küche mit köstlichen Gerichten, die mit Liebe nur für Sie zubereitet werden. Das
+                    Frühstück in unserem Restaurant ist
+                    für alle unsere Gäste inklusive.
+                    </p>
+                    </div>
+
+</div>
+
+                </div>  
+</div>
+            </div>
+        
+
+
+
+<div class="row no-gutters row2">
+
+    <div class="col-lg-6 order-lg-2 text-white showcase-img"
+        style="background-image: url('/static/imgs/showcase/2.png');"></div>
+
+    <div class="col-lg-6 order-lg-1 ">
+        <div class="row no-gutters subrow2">
+
+            
+
+            <div class="col-lg-6">
+                <div class="container">
+                    <p class="lead mb-0 shape" style="text-align: center;font-family: 'Unna',serif;  font-size:1.3rem; padding-bottom:3rem;">Wenn Sie alle köstlichen Speisen probieren und in Form bleiben möchten, steht Ihnen ein Fitnessstudio zur Verfügung,
+                    sobald Sie ein Zimmer in unserem Hotel buchen.
+                    </p>
+                </div>
+</div>
+
+<div class="col-lg-6 ">
+    <h2 style="font-family: Tangerine, serif; color: #f3c98b; font-size: 5rem; text-align: center; ">Bleiben Sie in Form!
+</h2>
+
+</div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row no-gutters row3">
+
+    <div class="col-lg-6 order-lg-1 text-white showcase-img"
+        style="background-image: url('/static/imgs/showcase/3.png');"></div>
+
+    <div class="col-lg-6 order-lg-2 ">
+        <div class="row no-gutters subrow3">
+
+            <div class="col-lg-6 ">
+                <h2 style="font-family: Tangerine, serif; color: #f3c98b; font-size: 5rem; text-align: center;">Feiern!</h2>
+
+            </div>
+
+            <div class="col-lg-6">
+                <div class="container">
+                    <p class="lead mb-0" style="text-align: center;font-family: 'Unna',serif;  font-size:1.3rem">Wenn Sie eine Hochzeit, einen Geburtstag oder eine Firmenveranstaltung organisieren möchten, ist unser Saal der perfekte
+                    Ort für Sie. Lasst uns gemeinsam Erinnerungen schaffen!
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+   
+<section class="icons" >
+    <div class="container">
+        
+        <div class="row text-center">
+            <div class="col-md-6 img">
+                <img src="/static/imgs/icons/paws.png" alt="">
+               
+                <p class="text">Wir sind ein tierfreundliches Hotel. Aber bringen Sie auch etwas Warmes für Ihr Haustier mit.</p>
+              
+            </div>
+            <div class="col-md-6 img">
+               <img src="/static/imgs/icons/credit-card.png" alt="">
+                
+                <p class="text">Wir akzeptieren sowohl Karten als auch Bargeld als Zahlungsmittel.</p>
+            </div>
+
+        </div>
+
+
+            <div class="row text-center">
+                <div class="col-md-6 img">
+                   
+<img src="/static/imgs/icons/parking-sign.png" alt="">
+
+                  
+                    <p class="text">Wir haben kostenlose Parkplätze in unserem Hotel, so dass Sie sich keine Sorgen um Ihr Auto machen müssen.</p>
+                </div>
+
+
+
+                <div class="col-md-6 img">
+                    <img src="/static/imgs/icons/wifi.png" alt="">
+                   
+                    <p class="text">Kostenloses Wi-Fi ist für alle unsere Gäste inklusive.</p>
+                </div>
+            
+            </div>
+
+        </div>
+    
+</section>
+
+
+<section class="form">
+
+    
+
+
+
+
+
+</section>
+
+ 
+
+
+<section class="page-section" id="form">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading ">Reservierung</h2>
+           
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form method="POST" id="contactForm" action="{% url 'deutsch' %}"  >
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                               <label> Name: <sup>*</sup> </label>
+                                <input class="form-control" id="" name="NAME" type="text" 
+                                    required="required" data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                            <label> Telefonnummer: <sup>*</sup> </label>
+                                <input class="form-control" id="phone" type="text" 
+                                    required="required" name="PHONE"
+                                    data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <label> Ankunftsdatum: <sup>*</sup> </label>
+                                <input class="form-control" id="date" type="date"  name="ARRIVAL"
+                                    required="required" data-date-inline-picker="true"
+                                   data-validation-required-message="Please enter your date of arrival.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                           
+                            <div class="form-group">
+                                <label>E-Mail Adresse:<sup>*</sup> </label>
+                                <input class="form-control" id="" type="email" required="required"
+                                name="EMAIL"
+                                    data-validation-required-message="Please enter your e-mail.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <label>Zimmer oder Veranstaltungshalle:<sup>**</sup> </label>
+                                <select  class="form-control" id="room" type="text"  required="required" name="ROOM"
+                                    data-validation-required-message="Please enter room or event hall.">
+        <option  value="" selected disabled > </option>
+<option>Bussineszimmer</option>
+<option>Paarzimmer</option>
+<option>Familienzimmer</option>
+<option>Veranstaltungshalle</option>
+                                   </select>
+                                <p class="help-block text-danger"></p>
+
+
+                            </div>
+                            <div class="form-group">
+                                <label> Abflugdatum: <sup>*</sup> </label>
+                                <input class="form-control" id="ending-date" type="date" required="required" name="DEPARTURE"
+                                    data-validation-required-message="Please enter your date of departure.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        
+                    </div>
+                        <div class="clearfix"></div>
+                        
+<div class="col-md-12">
+    <div class="form-group">
+        <label> Weitere Hinweise: <sup>***</sup> </label>
+        <textarea class="form-control" id="message" required="required"
+            data-validation-required-message="Please enter a message." name="NOTES"></textarea>
+        <p class="help-block text-danger"></p>
+    </div>
+</div>
+
+
+
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button id="btn3" class="btn btn-primary btn-xl text-uppercase" style="color: #f3c98b;"
+                                type="submit">Reservierung</button>
+                        </div>
+
+
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+   
+
+<div class="container" style="color: #865e3b; text-align: left; padding-top: 2rem; font-family: 'Unna',serif; font-size: 1.03rem;">
+<p> <sup>*</sup> Pflichtfelder
+    <br/>
+    <sup>**</sup> Pflichtfeld. Wenn Sie nach der Event Hall fragen möchten, wählen Sie die Option "Event Hall".
+<br/>
+    <sup>***</sup> Sonderwünsche für Räume oder Veranstaltungssaal
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="contact-section" id="contact">
+
+
+<div class="col-lg-12 text-center mx-auto">
+    <h2 class="section-heading " id="title">Kontak</h2>
+</div>
+
+
+<div class="col-lg-12 text-center mx-auto">
+    <h4 class="section-heading " id="title1">E-Mail</h4>
+</div>
+
+<div class="col-lg-12 text-center mx-auto">
+    <h6 class="section-heading " id="text1">example@gmail.com</h6>
+</div>
+
+
+
+<div class="col-lg-12 text-center mx-auto">
+    <h4 class="section-heading " id="title1">Telefonnummer</h4>
+</div>
+
+<div class="col-lg-12 text-center mx-auto">
+    <h6 class="section-heading " id="text1">0123456789</h6>
+</div>
+
+
+
+<div class="col-lg-12 text-center mx-auto">
+    <h4 class="section-heading " id="title1">Adresse</h4>
+</div>
+
+<div class="col-lg-12 text-center mx-auto">
+    <h6 class="section-heading " id="text1">Linscheider Bach 2, 58762 Altena, Germany</h6>
+</div>
+
+
+
+
+
+<div class="map col-lg-12 text-center mx-auto">
+
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2494.0813310220015!2d7.66965131576274!3d51.30962797960313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b94706f3c38fa1%3A0x4cc878678b5dda56!2sLinscheider%20Bach%202%2C%2058762%20Altena%2C%20Germany!5e0!3m2!1sen!2srs!4v1572024204096!5m2!1sen!2srs"
+    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+     scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+<h6 class="section-heading " id="distance">Entfernung zum nächsten Flughafen 42 km (Dortmund Airport)</h6>
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small indigo">
+
+
+   
+  
+<h6 class="section-heading text-center " id="distance" style="padding-bottom: 2px;">Besuchen Sie uns auch unter:</h6>
+
+<h6 class="booking section-heading font-weight-bold text-center " id="distance"><a href="https://www.booking.com/hotel/de/gastehaus-altena.html" target="blank">Booking.com</a></h6>
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--BOOTSRAP JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+
+
+<script src="{%static 'js/agency.js'%}"> </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+
+
+
+</html>
